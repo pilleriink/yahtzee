@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+<head>
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&display=swap" rel="stylesheet">
+<script src="gamelogic.js"></script>
+</head>
+
+<body>
+
+<div class="playground">
+	<div id="submitBlock">
+		<label>first player: <input type="text" id="player1"> </label> <br>
+		<label>second player: <input type="text" id="player2"> </label> <br>
+		
+		<form>
+		  Choose the amount of turns:
+		  <select id="turns">
+			<option value="3">3</option>
+			<option value="7">7</option>
+			<option value="13">13</option>
+		  </select>
+		</form>
+		<button class="button" type="button" onclick="submitPlayers()">Start playing!</button>
+	</div>
+	
+	<div id="gameBlock">
+		<div class="play">
+			<div class="header">
+				<h1 id="turn"></h1>
+				<p id="rolled"></p>
+				<p id="round"></p>
+			</div>
+			<button id="dice1" class="rolledDice1" onclick="chooseDice(1)"></button>
+			<button id="dice2" class="rolledDice2" onclick="chooseDice(2)"></button>
+			<button id="dice3" class="rolledDice3" onclick="chooseDice(3)"></button>
+			<button id="dice4" class="rolledDice4" onclick="chooseDice(4)"></button>
+			<button id="dice5" class="rolledDice5" onclick="chooseDice(5)"></button>
+			<br>
+			<button class="button" type="button" onclick="rollDice()" id="roll">ROLL DICE</button>
+		</div>
+		<div class="scoreBoard">
+			<table id="table"></table>
+		</div>
+	</div>
+
+	<div id="resultsBlock">
+		<button class="button" id="playAgain" onclick="playAgain()">Play again!</button>
+		<table id="results"></table>
+	</div>
+</div>
+
+</body>
+</html>

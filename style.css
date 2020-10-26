@@ -1,0 +1,156 @@
+@media screen and (max-width: 700px) {
+	#table {
+		margin: 20px auto;
+	}
+	.play {
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+	.rolledDice1, .rolledDice2, .rolledDice3, .rolledDice4, .rolledDice5, .rolledDice6, .chosenDice1, 
+	.chosenDice2, .chosenDice3, .chosenDice4, .chosenDice5, .chosenDice6 {
+		margin-bottom: 5px;
+	}
+	.button {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.header {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (min-width: 701px) {
+	#table {
+		margin-top: 20px;
+		margin-left: 25px;
+		margin-right: 100px;
+	}
+	.play {
+		float: left;
+		margin-left: 50px;
+		margin-right: 50px;
+		width: 50%;
+	}
+	.rolledDice1, .rolledDice2, .rolledDice3, .rolledDice4, .rolledDice5, .rolledDice6, .chosenDice1, 
+	.chosenDice2, .chosenDice3, .chosenDice4, .chosenDice5, .chosenDice6 {
+		margin-bottom: 20px;
+	}
+	.button {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.header {
+		margin-bottom: 100px;
+	}
+}
+
+html {
+		font-family: 'Oswald', sans-serif;
+		background-color: #F8F8FF;
+	}
+
+.playground {
+	text-align: center;
+}
+
+
+.rolledDice1, .rolledDice2, .rolledDice3, .rolledDice4, .rolledDice5, .rolledDice6 {
+	background-image: url("dice1.png");
+	background-repeat: no-repeat;
+	width: 120px;
+	height: 120px;
+	cursor: pointer;
+}
+
+.chosenDice1, .chosenDice2, .chosenDice3, .chosenDice4, .chosenDice5, .chosenDice6 {
+	background-image: url("dice2.png");
+	background-repeat: no-repeat;
+	width: 120px;
+	height: 120px;
+	cursor: pointer;
+}
+
+.rolledDice1, .chosenDice1 {
+	background-position: -4px -4px;
+}
+
+.rolledDice2, .chosenDice2 {
+	background-position: -132px -4px;
+}
+
+.rolledDice3, .chosenDice3 {
+	background-position: -260px -4px;
+}
+
+.rolledDice4, .chosenDice4 {
+	background-position: -388px -4px;
+}
+
+.rolledDice5, .chosenDice5 {
+	background-position: -516px -4px;
+}
+
+.rolledDice6, .chosenDice6 {
+	background-position: -644px -4px;
+}
+
+.button {
+	padding: 12px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	transition-duration: 0.4s;
+	background-color: #DDA0DD;
+	color: white;
+    border: 2px solid #DDA0DD;
+	outline: none;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: white;
+	color: #DDA0DD;
+}
+
+label {
+    display: block;
+	margin: .4rem 0;
+	font-size: 20px;
+}
+
+#submitBlock {
+	display: block;
+	margin-top: 100px;
+}
+
+#gameBlock, #resultsBlock {
+	display: none;
+}
+
+table {
+	margin: 50px;
+	border-collapse: collapse;
+}
+
+table, td, th {  
+    border: 2px solid #D8BFD8;
+    text-align: left;
+}
+
+#results, #playAgain {
+	margin: 20px auto;
+}
+
+th, td {
+  padding: 15px;
+}
+
+.btn {
+	background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+	cursor: pointer;
+    overflow: hidden;
+    outline:none;
+}
